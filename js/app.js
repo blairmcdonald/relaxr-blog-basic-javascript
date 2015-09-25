@@ -8,19 +8,22 @@
         $('.readless').hide();
         $('.learnMoreText').hide();
         
-        function slideDownMain() {
+        function slideDownMain(e) {
+            e.preventDefault();
             $('.extraTextMain').slideDown();
             $('.readless').show();
             $('.readmore').hide();
         }
         
-        function slideUpMain() {
+        function slideUpMain(e) {
+            e.preventDefault();
             $('.extraTextMain').slideUp();
             $('.readmore').show();
             $('.readless').hide();
         }
         
-        function slideDownSide() {
+        function slideDownSide(e) {
+            e.preventDefault();
             $('.learnMoreText').slideDown();
             $('.learnmore').hide();
         }
